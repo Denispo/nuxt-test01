@@ -21,6 +21,9 @@ WORKDIR /app
 # Přebíráme jen to nejnutnější (.output obsahuje vše pro SSR)
 COPY --from=base /app/.output .output
 
+# Vytvoříme storage adresář (pokud ještě neexistuje) se správným vlastníkem (uživatel bun)
+RUN mkdir -p /app/storage && chown -R bun:bun /app/storage
+
 ENV NODE_ENV=production
 # Bezpečnost: běží jako ne-root uživatel (Coolify to podporuje)
 USER bun

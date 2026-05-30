@@ -1,0 +1,2 @@
+# Aby se ti při docker build nekopírovala lokální složka storage do image (jinak by se data duplikovala a při redeployi by se mohla přepsat).
+storage/

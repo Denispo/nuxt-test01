@@ -1,0 +1,5 @@
+# Ignorujeme úplně všechno uvnitř složky storage
+*
+
+# Ale nechceme ignorovat tento .gitignore soubor
+!.gitignore
