@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         driver: 'fs',
         base: './storage'          // ← adresář v rootu projektu
       }
-    }
+    },
   },
 
 })
